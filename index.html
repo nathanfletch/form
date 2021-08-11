@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Personalized Letter to You!</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input id="name" class="form-control" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Your location:</label>
+            <input id="location" class="form-control" type="text" />
+          </div>
+          <button type="submit" class="btn btn-primary">Send the letter</button>
+        </form>
+
+        <div class="p-3" id="letter">
+          <p>
+            To the Esteemed <strong><span class="name"></span></strong>,
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+            aliquid accusamus laboriosam cum officia corporis ipsa vel quisquam
+            architecto est!
+          </p>
+          <br />
+          <p>From my beloved self,</p>
+          <p><span class="name"></span>, <span id="locationSpan"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
